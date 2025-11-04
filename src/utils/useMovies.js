@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import setTimer from "./helpers";
 
-const KEY = "Your omdbapi key";
+const KEY = process.env.REACT_APP_OMDB_API_KEY;
 
 export function useMovies(query, callBack) {
   const [movies, setMovies] = useState([]);

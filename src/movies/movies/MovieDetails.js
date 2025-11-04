@@ -4,7 +4,7 @@ import Loader from "../../ui/Loader";
 import Button from "../../ui/Button";
 import StarRating from "../../utils/StarRating";
 
-const KEY = "your api key";
+const KEY = process.env.REACT_APP_OMDB_API_KEY;
 
 export default function MovieDetails({
   selectedId,
